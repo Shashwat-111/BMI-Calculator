@@ -31,13 +31,3 @@ class Age extends ChangeNotifier {
   }
 
 }
-
-class BMI extends ChangeNotifier {
-  int calculatedBMI = 0;
-
-  void calculate()
-  {
-    calculatedBMI = 20;
-    notifyListeners();
-  }
-}
