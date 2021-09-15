@@ -6,6 +6,7 @@ import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:bmi_calculator/Provider_Class/ProviderClass.dart';
+import 'package:bmi_calculator/Constants/Colors.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -29,11 +30,11 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
         child: Scaffold(
 
-          backgroundColor: Color(0xFF0A0E21),
+          backgroundColor: kbackgroundColor,
 
           appBar: AppBar(
             title: Text("BMI CALCULATOR", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),),
-            backgroundColor:Color(0xFF0A0E21),
+            backgroundColor: kbackgroundColor,
             elevation: 5,
           ),
 
@@ -228,7 +229,7 @@ class _HomePageState extends State<HomePage> {
               ), //for weight and age
 
               MaterialButton(
-                color: Color.fromRGBO(253, 2, 37, 1),
+                color: kButtonColor,
                 minWidth: width*0.95,
                 height: height*0.05,
                 onPressed: (){

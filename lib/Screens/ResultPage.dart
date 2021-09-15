@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/Constants/Colors.dart';
 import 'package:bmi_calculator/Constants/TextStyling.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -23,11 +24,11 @@ class ResultPage extends StatelessWidget {
     var mediaQWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      backgroundColor: Color(0xFF0A0E21),
+      backgroundColor: kbackgroundColor,
 
       appBar: AppBar(
         title: Text("BMI CALCULATOR", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),),
-        backgroundColor:Color(0xFF0A0E21),
+        backgroundColor: kbackgroundColor,
         elevation: 5,
       ),
 
