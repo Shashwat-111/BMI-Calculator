@@ -191,7 +191,6 @@ class _HomePageState extends State<HomePage> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text("AGE", style: defaultTextStyle),
-                          // Text("${context.watch<Age>().age}"+ " years", style: defaultTextStyle),
                           Consumer<Age>(
                             builder:(_,age,__) => RichText(
                               text: TextSpan(
